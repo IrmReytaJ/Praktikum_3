@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Beranda</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    form {
+        width: 600px;
+        padding: 20px;
+    }
+    label {
+        display: inline;
+    }
+    form div {
+        margin: 10px;
+    }
+</style>
+<body>
+    <header>
+        <h3>Form Penjadwalan Pertemuan</h3>
+    </header>
+    <form action="Form Penjadwal Pertemuan" method="post">
+
+        <fieldset>
+        <legend>Informasi Pribadi</legend>
+        <div>
+            <label for="Nama">Nama</label>
+            <input type="text" id="Nama" name="Nama" required>
+            </div>
+            <div>
+            <label for="No. Telepon">No. Telepon</label>
+            <input type="tel" id="No. Telepon" name="No. Telepon" required>
+            </div>
+            <div>
+            <label for="Alamat Email">Alamat Email</label>
+            <input type="email" id="Alamat Email" name="Alamat Email" required>
+            </div>
+            <div>
+            <label for="Tanggal Lahir">Tanggal Lahir</label>
+            <input type="date" id="Tanggal Lahir" name="Tanggal Lahir" required>
+            </div>
+        </div>
+        </fieldset>
+
+        <fieldset>
+        <legend>Permintaan Pertemuan"</legend>
+        <div>
+            <label for="Tujuan Pertemuan">Tujuan Pertemuan</label>
+            <input type="text" id="Tujuan Pertemuan" name="Tujuan Pertemuan" required>
+            </div>
+            <div>
+            <label for="Tingkat Kepentingan Pertemuan">Tingkat Kepentingan Pertemuan</label>
+            <select id="Tingkat Kepentingan Pertemuan" name="Tingkat Kepentingan Pertemuan" required>
+                <option value="Rendah">Rendah</option>
+                <option value="Sedang">Sedang</option>
+                <option value="Tinggi">Tinggi</option>
+            </select>
+            </div>
+            <div>
+            <label for="Tanggal">Tanggal</label>
+            <input type="date" id="Tanggal" name="Tanggal" required>
+            </div>
+            <div>
+            <label for="Waktu">Waktu</label>
+            <input type="time" id="Waktu" name="Waktu" required>
+        </div>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
